@@ -1,0 +1,16 @@
+## camera at (-10, 75, 60) looking at origin
+vv -10 75 60 1 -7.5 -6
+cc 0
+## ambient light = 0.7
+al 0.7 0.7 0.7
+## recursion depth: 5
+rdepth 5
+## red point light at x = -30, y = 10, z = 60 
+vv -30 10 60 0 0 0
+pl 1 1.0 0 0
+## red sphere radius 10 at (0, 0, 0)
+am 0.6 0.0 0.0
+dm 0.4 0.0 0.0
+sm 0.4 0.4 0.4 128
+vv 0 0 0 10 0 0
+ss 2

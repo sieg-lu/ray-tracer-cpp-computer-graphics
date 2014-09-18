@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="hGraphic32">
+      <UniqueIdentifier>{cb2c24e6-5f77-4bea-a0fd-dd4aea4630f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{081ff5aa-fe22-4b72-8bd2-ff21058a9bc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lights">
+      <UniqueIdentifier>{3c62b213-eaa1-4f48-ab0e-ed312b5f59fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Primitives">
+      <UniqueIdentifier>{e9d8a348-8c58-40cc-af6d-ebb6475d61bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VMath">
+      <UniqueIdentifier>{04f79496-4f98-4017-8c67-c4f74c44b97e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RayTracer">
+      <UniqueIdentifier>{620e4499-80ab-4801-baee-fec7bd2c049b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="hGraphic32\hBmpFile.h">
+      <Filter>hGraphic32</Filter>
+    </ClInclude>
+    <ClInclude Include="hGraphic32\hColor32.h">
+      <Filter>hGraphic32</Filter>
+    </ClInclude>
+    <ClInclude Include="hGraphic32\hGraphic32.h">
+      <Filter>hGraphic32</Filter>
+    </ClInclude>
+    <ClInclude Include="hGraphic32\hGraphic32_c.h">
+      <Filter>hGraphic32</Filter>
+    </ClInclude>
+    <ClInclude Include="hGraphic32\hPixels32.h">
+      <Filter>hGraphic32</Filter>
+    </ClInclude>
+    <ClInclude Include="hGraphic32\hStream.h">
+      <Filter>hGraphic32</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Parser.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Lights\AmbientLight.h">
+      <Filter>Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="Lights\DirectionalLight.h">
+      <Filter>Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="Lights\ILight.h">
+      <Filter>Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="Lights\PointLight.h">
+      <Filter>Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="Lights\SpotLight.h">
+      <Filter>Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="Primitives\IPrimitive.h">
+      <Filter>Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="Primitives\Plane.h">
+      <Filter>Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="Primitives\Sphere.h">
+      <Filter>Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="Primitives\Triangle.h">
+      <Filter>Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="Primitives\Cylinder.h">
+      <Filter>Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="RayTracer\IntersectResult.h">
+      <Filter>RayTracer</Filter>
+    </ClInclude>
+    <ClInclude Include="RayTracer\PerspectiveCamera.h">
+      <Filter>RayTracer</Filter>
+    </ClInclude>
+    <ClInclude Include="RayTracer\Ray.h">
+      <Filter>RayTracer</Filter>
+    </ClInclude>
+    <ClInclude Include="RayTracer\Raytracer.h">
+      <Filter>RayTracer</Filter>
+    </ClInclude>
+    <ClInclude Include="RayTracer\Scene.h">
+      <Filter>RayTracer</Filter>
+    </ClInclude>
+    <ClInclude Include="VMath\VMath.h">
+      <Filter>VMath</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="hGraphic32\hGraphic32_c.cpp">
+      <Filter>hGraphic32</Filter>
+    </ClCompile>
+    <ClCompile Include="hGraphic32\hPixels32.cpp">
+      <Filter>hGraphic32</Filter>
+    </ClCompile>
+    <ClCompile Include="hGraphic32\hStream.cpp">
+      <Filter>hGraphic32</Filter>
+    </ClCompile>
+    <ClCompile Include="hGraphic32\hBmpFile.cpp">
+      <Filter>hGraphic32</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Main.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Parser.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Lights\DirectionalLight.cpp">
+      <Filter>Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="Lights\PointLight.cpp">
+      <Filter>Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="Lights\SpotLight.cpp">
+      <Filter>Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="Lights\AmbientLight.cpp">
+      <Filter>Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="Primitives\Plane.cpp">
+      <Filter>Primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="Primitives\Sphere.cpp">
+      <Filter>Primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="Primitives\Triangle.cpp">
+      <Filter>Primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="Primitives\Cylinder.cpp">
+      <Filter>Primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="RayTracer\IntersectResult.cpp">
+      <Filter>RayTracer</Filter>
+    </ClCompile>
+    <ClCompile Include="RayTracer\PerspectiveCamera.cpp">
+      <Filter>RayTracer</Filter>
+    </ClCompile>
+    <ClCompile Include="RayTracer\Ray.cpp">
+      <Filter>RayTracer</Filter>
+    </ClCompile>
+    <ClCompile Include="RayTracer\Raytracer.cpp">
+      <Filter>RayTracer</Filter>
+    </ClCompile>
+    <ClCompile Include="RayTracer\Scene.cpp">
+      <Filter>RayTracer</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

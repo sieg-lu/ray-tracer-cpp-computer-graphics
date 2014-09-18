@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D0F0547A-CFBA-4375-AE99-E21183D7BB67}</ProjectGuid>
+    <RootNamespace>RaytracerCpp</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Common\Parser.h" />
+    <ClInclude Include="hGraphic32\hBmpFile.h" />
+    <ClInclude Include="hGraphic32\hColor32.h" />
+    <ClInclude Include="hGraphic32\hGraphic32.h" />
+    <ClInclude Include="hGraphic32\hGraphic32_c.h" />
+    <ClInclude Include="hGraphic32\hPixels32.h" />
+    <ClInclude Include="hGraphic32\hStream.h" />
+    <ClInclude Include="Lights\AmbientLight.h" />
+    <ClInclude Include="Lights\DirectionalLight.h" />
+    <ClInclude Include="Lights\ILight.h" />
+    <ClInclude Include="Lights\PointLight.h" />
+    <ClInclude Include="Lights\SpotLight.h" />
+    <ClInclude Include="Primitives\Cylinder.h" />
+    <ClInclude Include="Primitives\IPrimitive.h" />
+    <ClInclude Include="Primitives\Plane.h" />
+    <ClInclude Include="Primitives\Sphere.h" />
+    <ClInclude Include="Primitives\Triangle.h" />
+    <ClInclude Include="RayTracer\IntersectResult.h" />
+    <ClInclude Include="RayTracer\PerspectiveCamera.h" />
+    <ClInclude Include="RayTracer\Ray.h" />
+    <ClInclude Include="RayTracer\Raytracer.h" />
+    <ClInclude Include="RayTracer\Scene.h" />
+    <ClInclude Include="VMath\VMath.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Common\Main.cpp" />
+    <ClCompile Include="Common\Parser.cpp" />
+    <ClCompile Include="hGraphic32\hBmpFile.cpp" />
+    <ClCompile Include="hGraphic32\hGraphic32_c.cpp" />
+    <ClCompile Include="hGraphic32\hPixels32.cpp" />
+    <ClCompile Include="hGraphic32\hStream.cpp" />
+    <ClCompile Include="Lights\AmbientLight.cpp" />
+    <ClCompile Include="Lights\DirectionalLight.cpp" />
+    <ClCompile Include="Lights\PointLight.cpp" />
+    <ClCompile Include="Lights\SpotLight.cpp" />
+    <ClCompile Include="Primitives\Cylinder.cpp" />
+    <ClCompile Include="Primitives\Plane.cpp" />
+    <ClCompile Include="Primitives\Sphere.cpp" />
+    <ClCompile Include="Primitives\Triangle.cpp" />
+    <ClCompile Include="RayTracer\IntersectResult.cpp" />
+    <ClCompile Include="RayTracer\PerspectiveCamera.cpp" />
+    <ClCompile Include="RayTracer\Ray.cpp" />
+    <ClCompile Include="RayTracer\Raytracer.cpp" />
+    <ClCompile Include="RayTracer\Scene.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

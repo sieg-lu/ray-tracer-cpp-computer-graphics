@@ -1,0 +1,47 @@
+## camera at (0, 25, -60) looking at origin
+vv 0 25 -60 0 -2.5 6
+cc 0
+
+## vertices
+vv 0 25 -60 0 0 0
+vv 0 15 0 0 10 0
+vv 0.0 0.0 0.0 0 1 0
+vv 0 90 0 0 -1 0
+vv 15 30 0 -1 -1 0
+vv 15 10 -10 0 7 0
+
+vv 0 15 -35 0 10 0
+vv 15 10 -40 0 7 0
+vv 10 10 -40 0 7 0
+
+## lights
+## ambient light = 0.7
+al 0.7 0.7 0.7
+## red point light at (0 15 0)
+pl 1 1.0 0 0
+## white spot light at (0 30 0) facing down
+sl 4 0.8 0.8 0.8
+## blue directional light at (15 30 0) facing (-1 -1 0)
+dl 5 0.1 0.3 0.7
+
+## primitives
+## red sphere radius 10 at (0 15 0)
+am 0.0 0.0 0.4
+dm 0.4 0.5 0.0
+sm 0.4 0.4 0.4 128
+ss 2
+## Plain
+am 0.8 0.8 0.8
+dm 0.5 0.5 0.5
+sm 0.1 0.1 0.1 1
+ps 3
+## green sphere radius 1 at (0 10 -10)
+am 0.0 0.8 0.2
+dm 0.0 0.5 0.1
+sm 0.7 0.7 0.7 1
+ss 6
+
+am 0.3 0.4 0.8
+dm 0.1 0.2 0.8
+sm 0.7 0.7 0.7 1
+ts 7 8 9
